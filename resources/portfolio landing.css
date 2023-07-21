@@ -9,7 +9,7 @@ html {
 }
 
 .heading {
-    margin-top: 125px;
+    margin-top: 175px;
 }
 
 h1 {
@@ -32,7 +32,7 @@ h1 {
 .nav {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: repeat(auto, 1fr); 
     column-gap: 40px;
     top: 50px;
     position: relative;
@@ -85,7 +85,7 @@ footer {
     font-family: "Space Mono", monospace;
     font-size: 10px;
     text-align: center;
-    margin-top: 175px;
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 
@@ -131,8 +131,4 @@ footer {
     bottom: 10px;
     left: 10px;
     position: fixed;
-}
-
-.sword {
-    font-size: 30px;
 }
