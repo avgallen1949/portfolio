@@ -1,0 +1,137 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url();
+    font-family: Kadabra;
+    src: url(./Kadabra.ttf) format(OpenType);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.grid {
+    margin: 10px;
+    float: auto;
+}
+
+@media screen and (orientation: landscape) {
+.grid {
+    display:grid;
+    grid-template-columns: 15% 10% 20% 30%;
+    grid-template-rows: repeat(10);
+    row-gap: 50px;
+    column-gap: 30px;
+    position:static;
+    left: 10px;
+    top: 10px;
+}
+}
+
+.header {
+    font-family: Kadabra, "Space Mono", 'Courier New', Courier, monospace;
+    font-size: 1em;
+    letter-spacing: -1.25px;
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    text-align: left;
+    color: #cbdc4e;
+    margin: 20px;
+}
+
+.header p a {
+    font-family: "Space Mono", 'Courier New', Courier, monospace;
+    font-size: 2em;
+    margin-top: 1em;
+    color: white;
+    text-decoration: none;
+    border: 2px dotted #c79dc8;
+    border-radius: 50%;
+    padding: 0 10px 3px 10px;
+}
+
+.header p a:hover {
+    color:#c79dc8;
+}
+
+.header p a:active {
+    color:#cbdc4e;
+}
+
+h2, h3, h4, p {
+    font-family: "Space Mono", 'Courier New', Courier, monospace;
+}
+
+.title {
+    font-style: italic;
+    font-size: 14px;
+    display: inline;
+}
+
+.description {
+    font-size: 12px;
+    display: inline;
+}
+
+.image {
+    max-width: 30em;
+    border-radius: 5%;
+    position: relative;
+    border: 2px solid white
+    
+}
+
+.title a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #cbdc4e;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#c79dc8;
+    cursor: crosshair;
+}
+
+a:active {
+    color: white;
+}
+
+.title a:active {
+    color: #cbdc4e;
+}
+
+.year {
+    font-size: 10px;
+    font-style: normal;
+}
+
+hr {
+   border: 1px solid white;
+}
+
+
+
+
+
+
+
+#circle-left-top {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #c79dc8;
+    top: 10px;
+    left: 10px;
+    position: fixed;
+    z-index: 1;
+}
