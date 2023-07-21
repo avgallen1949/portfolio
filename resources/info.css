@@ -177,6 +177,24 @@ ul {
     height: auto;
 }
 
+.hello {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
 hr {
     border: 1px solid black;
+}
+
+#social p {
+    font-family: "Space Mono", 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    border: 2px dotted #c79dc8;
+    padding: 10px;
+    border-radius: 50%;
 }
