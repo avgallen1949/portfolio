@@ -9,12 +9,8 @@ html {
     src: url(./Kadabra.ttf) format(OpenType);
 }
 
-h1 {
-    font-family: Kadabra, 'Courier New', Courier, monospace;
-    font-size: 120px;
-    text-align: center;
-    color: #cbdc4e;
-    line-height: 110px;
+p {
+    font-family: "Space Mono", 'Courier New', Courier, monospace;
 }
 
 .p-info {
@@ -46,6 +42,10 @@ h1 {
 
 .highlight {
     color: #c79dc8;
+}
+
+.purple {
+    background-color: #c79dc8;
 }
 
 

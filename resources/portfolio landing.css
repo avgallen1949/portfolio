@@ -9,7 +9,7 @@ html {
 }
 
 .heading {
-    margin-top: 175px;
+    margin-top: 125px;
 }
 
 h1 {
@@ -131,4 +131,8 @@ footer {
     bottom: 10px;
     left: 10px;
     position: fixed;
+}
+
+.sword {
+    font-size: 30px;
 }
