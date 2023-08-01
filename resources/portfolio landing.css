@@ -4,40 +4,43 @@ html {
 }
 
 @font-face {
-    font-family: Kadabra;
-    src: url(./Kadabra.ttf) format(OpenType);
+    font-family: Pencerio;
+    src: url(./Pencerio-Hairline.woff) format(woff);
 }
 
-.heading {
-    margin-top: 175px;
-}
 
-h1 {
-    font-family: Kadabra, "Space Mono", monospace;
-    font-size: 5em;
-    text-align: center;
-    color: #cbdc4e;
-    margin: 10px;
-    letter-spacing: -1.25px;
-    line-height: 1.25em;
-}
-
-.heading p {
+#name {
     font-family: "Space Mono", monospace;
     font-style: italic;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 8em;
+    margin: 20px auto;
 }
 
-.nav {
-    display:grid;
+.background {
+    z-index: 0;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-rows: repeat(auto, 1fr); 
+    column-gap: 10px;
+    font-size: 50px;
+    color:#cbdc4e;
+}
+
+
+.header {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(auto, 1fr); 
-    column-gap: 40px;
-    top: 50px;
+    column-gap: 10px;
     position: relative;
-    margin: 30px;
-    align-items: center;
+    margin: 0 100px;
+    top: 50px;
+}
+
+.header p {
+    font-family: "Space Mono", 'Courier New', Courier, monospace;
 }
 
 
@@ -45,6 +48,8 @@ h1 {
     text-align: center;
     border: 2px dotted #c79dc8;
     margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #CV, #Info {
@@ -52,17 +57,14 @@ h1 {
     font-size: 20px;
     font-family: "Space Mono", monospace;
     font-style: italic;
-    padding: 20px;
 
 }
 
 #Work {
     border-radius: 10%;
-    font-size: 3em;    
+    font-size: 1.75em;    
     font-family: "Space Mono", monospace;
     font-style:italic;
-    letter-spacing: -1.25px;
-    padding: 50px;
 
 }
 
@@ -80,13 +82,12 @@ a:link, a:visited {
     color:#c79dc8;
 }
 
-
 footer {
     font-family: "Space Mono", monospace;
     font-size: 10px;
     text-align: center;
-    margin-top: 150px;
-    margin-bottom: 50px;
+    bottom: 50px;
+    position: relative;
 }
 
 .smile {
@@ -131,4 +132,9 @@ footer {
     bottom: 10px;
     left: 10px;
     position: fixed;
+}
+
+hr {
+    margin: 50px 0;
+    border: 1px dotted #c79dc8;
 }
