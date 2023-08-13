@@ -29,6 +29,11 @@ sup {
     color: #bbce00;
 }
 
+.italic {
+    font-family: "Xanh Mono", monospace;
+    font-style: italic;
+}
+
 /* buttons */
 
 .nav {
@@ -86,14 +91,6 @@ a:hover {
 }
 
 
-.right {
-    height: 35rem;
-    overflow: scroll;
-    scrollbar-color: #bbce00 #e8e8b1;
-    scrollbar-width: thin;
-    scroll-behavior: smooth;
-  }
-
   /* grid */
 
 .grid {
@@ -105,7 +102,6 @@ a:hover {
     margin-bottom: 3rem;
     grid-auto-flow: row;
 }
-
 .images img {
     object-fit: cover;
     width: 100%;
@@ -113,13 +109,25 @@ a:hover {
 }
 
 .right {
-    font-size: 20px;
-    line-height: 28px;
+    height: 35rem;
 }
 
-hr {
-    border: 1px dashed;
+.right, .writing {
+    overflow: scroll;
+    scrollbar-color: #bbce00 #e8e8b1;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    direction: rtl;
+    border-left: 1px black dashed;
+    padding-left: 2rem;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
 }
+
+.right>div {
+    direction: ltr;
+  }
 
 .endnotes {
     font-size: 10px;
@@ -148,10 +156,6 @@ hr {
       margin-top: 2rem;
     }
 
-    hr {
-        display: none;
-    }
-
     h6 {
         font-size: 1.25rem;
     }
@@ -168,8 +172,6 @@ hr {
         font-size: 1.3rem;
         height: 30rem;
         margin-bottom: 2rem;
-        margin-left: 1rem;
-        margin-right: 3rem;
         overflow: scroll;
     }
 
@@ -184,8 +186,6 @@ hr {
 
     .left {
         font-size: 2rem;
-        margin-left: 1rem;
-        margin-right: 3rem;
         margin-bottom: 0;
     }
 
