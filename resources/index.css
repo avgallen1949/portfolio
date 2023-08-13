@@ -81,15 +81,16 @@ a:hover {
 
 .grid {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-template-rows: repeat(auto, 1fr);
     column-gap: 2rem;
     row-gap: 3rem;
     position: relative;
-    margin: 0 1rem;
-    margin-top: 5rem;
+    margin: 2rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
 
 hr {
     border: 1px black dashed;
@@ -194,69 +195,70 @@ hr {
     border-radius: 0.5rem;
   }
 
-/* footer */
-
-footer {
-    grid-area: footer;
-}
 
 
-/* smartphone */
+//* smartphone */
 @media only screen and (max-width: 480px), (orientation: portrait) {
 
-   .nav {
-        display: grid;
-        grid-template-columns: 1fr;
-        font-size: 2rem;
-        text-align: center;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-    }
-
-    #work:hover, #info:hover, #writing:hover {
-        transform: rotate(0deg);
-    }
-
-    #empty {
-        display: none;
-    }
-
-    .grid {
-        margin-top: 2rem;
-    }
-
-    .year {
-        font-size: 1rem;
-    }
-  }
-
-  /*tablet*/
-  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-        .grid {
-            margin-top: 3rem;
-        }
-
-        .nav {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            font-size: 2rem;
-            text-align: center;
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
-            margin-top: 2rem;
-        }
-
-        #work:hover, #info:hover, #writing:hover {
-            transform: rotate(0deg);
-        }
-
-        #empty {
-            display: none;
-        }
-
-        .year {
-            font-size: 1rem;
-        }
-  }
-  
+    .nav {
+         display: grid;
+         grid-template-columns: 1fr;
+         font-size: 2rem;
+         text-align: center;
+         margin-left: 0.5rem;
+         margin-right: 0.5rem;
+     }
+ 
+     .grid {
+         margin-left: 1.5rem;
+         margin-right: 1.5rem;
+     }
+ 
+     #work:hover, #info:hover, #writing:hover {
+         transform: rotate(0deg);
+     }
+ 
+     #empty {
+         display: none;
+     }
+ 
+     .grid {
+         margin-top: 2rem;
+     }
+ 
+     .year {
+         font-size: 1rem;
+     }
+   }
+ 
+   /*tablet*/
+   @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+ 
+         .grid {
+             margin-top: 3rem;
+             margin-left: 1.5rem;
+             margin-right: 1.5rem;
+         }
+ 
+         .nav {
+             display: grid;
+             grid-template-columns: repeat(3, 1fr);
+             font-size: 2rem;
+             text-align: center;
+             margin-left: 0.5rem;
+             margin-right: 0.5rem;
+             margin-top: 2rem;
+         }
+ 
+         #work:hover, #info:hover, #writing:hover {
+             transform: rotate(0deg);
+         }
+ 
+         #empty {
+             display: none;
+         }
+ 
+         .year {
+             font-size: 1rem;
+         }
+   }

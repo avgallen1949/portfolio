@@ -72,10 +72,6 @@ a:hover {
     background-color: #bbce00;
 }
 
-.right {
-    height: 35rem;
-    overflow: auto;
-  }
 
 .right {
     height: 35rem;
@@ -91,9 +87,10 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 35rem;
-    margin: 20px;
     gap: 20px 60px;
-    margin-top: 6rem;
+    margin: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     grid-auto-flow: row;
 }
 
@@ -123,8 +120,8 @@ hr {
       grid-template-rows: auto;
       row-gap: 2rem;
       margin-top: 2rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
     }
 
     h6 {
@@ -136,7 +133,17 @@ hr {
     }
 
     .right {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        height: 30rem;
+        overflow: auto;
+        margin-bottom: 5rem;
+        margin-left: 1rem;
+        margin-right: 3rem;
+    }
+
+    .images {
+        margin-left: 1rem;
+        margin-right: 2rem;
     }
 
     .endnotes {
@@ -145,6 +152,8 @@ hr {
 
     .left {
         font-size: 2rem;
+        margin-left: 1rem;
+        margin-right: 3rem;
     }
 
    .nav {
@@ -173,16 +182,31 @@ hr {
         grid-auto-flow: row;
         grid-template-rows: auto;
         margin-top: 3rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
         }
 
         .left {
             grid-column: span 2;
             font-size: 1.5rem;
             text-align: center;
+            margin-left: 2rem;
+            margin-right: 3rem;
         }
+
+
+    .images {
+        margin-left: 2rem;
+        margin-right: 3rem;
+    }
         
         .right {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
+            height: 30rem;
+            overflow: auto;
+            margin-bottom: 5rem;
+            margin-left: 2rem;
+            margin-right: 3rem;
         }
 
         #work, #info, #writing {

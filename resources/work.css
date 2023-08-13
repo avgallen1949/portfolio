@@ -71,13 +71,13 @@ a:hover {
 
 .grid {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-template-rows: repeat(auto, 1fr);
     column-gap: 2rem;
     row-gap: 3rem;
     position: relative;
-    margin: 0 1rem;
-    margin-top: 5rem;
+    margin: 2rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -184,11 +184,6 @@ hr {
     border-radius: 0.5rem;
   }
 
-/* footer */
-
-footer {
-    grid-area: footer;
-}
 
 
 /* smartphone */
@@ -201,6 +196,12 @@ footer {
         text-align: center;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
+    }
+
+    .grid {
+        grid-template-columns: 2fr;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
 
     #work:hover, #info:hover, #writing:hover {
@@ -225,6 +226,8 @@ footer {
 
         .grid {
             margin-top: 3rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
         }
 
         .nav {
