@@ -1,200 +1,182 @@
+/* doc */
 html {
-    background-color: #fdffe3;
-    color: black;
-}
-
-
-@font-face {
-    font-family: Kadabra;
-    src: url(./Kadabra.ttf) format(OpenType);
-}
-
-p {
-    font-family: "Space Mono", 'Courier New', Courier, monospace;
-}
-
-.p-info {
-    font-family: "Space Mono", 'Courier New', Courier, monospace;
-    font-style: italic;
-    font-size: 1.5em;
-    text-align: left;
-}
-
-#interests {
-    font-family: "Space Mono", 'Courier New', Courier, monospace;
-    font-style: italic;
-    font-size: 1em;
-    text-align: left;
-}
-
-
-.title {
-    font-family: Kadabra, "Space Mono", 'Courier New', Courier, monospace;
-    font-size: 2em;
-    letter-spacing: -1.25px;
-    position: relative;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    text-align: left;
-    color: #cbdc4e;
-    left: 30px;
-}
-
-.highlight {
-    color: #c79dc8;
-}
-
-.purple {
-    background-color: #c79dc8;
-}
-
-
-.grid-info {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    grid-template-rows: repeat(auto, 1fr);
-    column-gap: 50px;        
-    row-gap: 30px;
-    top: 100px;
-    position: relative;
-    margin: 50px;
-    position: relative;
-    top: 150px;
-}
-
-.header {
-    color: #cbdc4e;
-    z-index: 1;
-    position: fixed;
-    display:inline;
-    top: 0px;
-}
-
-.header {    
-    left: 50px;
-    font-size: 2.5rem;
-}
-
-#right {
-    display: relative;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    z-index: 1;
-    font-size: 20px;
-}
-
-#left {
-    display: relative;
-    position: fixed;
-    top: 50px;
-    right: 150px;
-    z-index: 1;
-    font-size: 20px;
-}
-
-.header p {
-    top: 10px;
-    font-family: "Space Mono", 'Courier New', Courier, monospace;
-}
-
-
-
-.header p a, #left, #right {
-    color: black;
-    text-decoration: none;
-    border: 2px dotted #c79dc8;
-    border-radius: 50%;
-    padding: 0 20px 10px 20px;
-    text-align: center;
-    background-color:#fdffe3;
-}
-
-
-
-.header p a:hover, #left:hover, #right:hover {
-    color: #c79dc8;
-    transform: rotate(-20deg);
-}
-
-.header p a:active, #left:active, #right:active {
-    color: #cbdc4e;
-}
-
-a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover{
-    color:#c79dc8;
-    cursor: crosshair;
-    transform: rotate(-20deg);
-}
-
-
-a:active {
-    color: #cbdc4e;
-}
-
-h4 {
-    font-family: "Space Mono", 'Courier New', Courier, monospace;
-    font-size: 1em;
-    text-align: left;
-    font-style: italic;
-}
-
-ul {
-    font-family: "Space Mono", 'Courier New', Courier, monospace;
-    font-size: 1em;
-    text-align: left;
-}
-
-.small-text {
-    font-size: .85em;
-    font-style: italic;
-    color:#c79dc8;
-}
-
-#email {
-    font-size: 1em;
-    color:#c79dc8;
-}
-
-.footer-info {
-    font-family: "Space Mono", 'Courier New', Courier, monospace;
-    font-size: .75em;
-    text-align: center;
-    margin: 50px;
-    position: relative;
-}
-
-.info-pix {
-    border-radius: 5%;
-    border: 2px solid black;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-
-.hello {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #fffff3;
 }
 
 hr {
-    border: 1px solid black;
+    border: 1px black dashed;
 }
 
-#social p {
-    font-family: "Space Mono", 'Courier New', Courier, monospace;
-    font-size: 14px;
+/*type */
+h1 {
+    font-family: "Xanh Mono", monospace;
+}
+
+
+/* buttons */
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 1.25rem;
+    font-family: "Xanh Mono", monospace;
+}
+
+#empty {
+    border: 1px black dashed;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 0.75rem;
+    grid-column: span 2;
+    font-size: .9rem;
+    text-align: center;
+    font-style: italic;
+    padding-top: 0.8rem;
+}
+
+#info {
+    background-color:#bbce00;
+}
+
+#work, #writing, #info {
+    border: 1px black dashed;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 0.75rem;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
-    border: 2px dotted #c79dc8;
-    padding: 10px;
-    border-radius: 50%;
+    color: black;
 }
+
+a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#work, #writing {
+    transition: .5s ease-in-out;
+}
+
+#work:hover, #writing:hover {
+    background-color: #bbce00;
+    border: 1px #bbce00 dashed;
+}
+
+#work:active, #writing:active, #info:active {
+    background-color: #bbce00;
+}
+
+
+/*grid*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 2rem;
+    gap: 20px 60px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    grid-auto-flow: row;
+}
+
+.right {
+    overflow: scroll;
+    height: 700px;
+    scrollbar-color: #bbce00 #e8e8b1;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    border-left: 1px black dashed;
+    padding-left: 2rem;
+}
+
+/*text*/
+.info {
+    font-family: "Xanh Mono", monospace;
+    font-size: 2rem;
+}
+
+#email {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.about {
+    font-size: 20px;
+    line-height: 28px;
+    padding-right: 2rem;
+}
+
+.arena {
+    border: 1px black dashed;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 10px;
+    transition: .5s ease-in-out;
+}
+
+.arena:hover {
+    background-color: #bbce00;
+    border: 1px #bbce00 dashed;
+}
+
+.roles {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.small-text {
+    font-size: 15px;
+}
+
+.role-title {
+    font-family: "Xanh Mono", monospace;
+    font-size: 1.5rem;
+}
+
+/* smartphone */
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    .grid {
+      grid-template-columns: 1fr;
+      margin-top: 2rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    #empty {
+        display: none;
+    }
+
+}
+
+  /*tablet*/
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    #empty {
+        display: none;
+    }
+
+  }
