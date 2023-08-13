@@ -100,14 +100,15 @@ a:hover {
 }
 
 .grid p {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
 }
 
 .title {
     font-size: 1.5rem;
     font-family: "Xanh Mono", monospace;
 }
+
 
 hr {
     border: 1px black dashed;
@@ -126,33 +127,58 @@ h4 {
     width: 100%;
     height: auto;
 }
-
 /* smartphone */
 @media only screen and (max-width: 480px), (orientation: portrait) {
-    .grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      row-gap: 2rem;
-      margin-top: 1rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
 
-    #empty, #work {
-        display: none;
-    }
-  }
+ 
+     .grid {
+         grid-template-columns: minmax(75%, 95%);
+         margin-left: 1.5rem;
+         margin-right: 1.5rem;
+     }
 
-  /*tablet*/
-  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+   }
+ 
+   /*tablet*/
+   @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+ 
+         .grid {
+             margin-top: 3rem;
+             margin-left: 1.5rem;
+             margin-right: 1.5rem;
+         }
+ 
+         .nav {
+             display: grid;
+             grid-template-columns: repeat(3, 1fr);
+             font-size: 2rem;
+             text-align: center;
+             margin-left: 0.5rem;
+             margin-right: 0.5rem;
+             margin-top: 2rem;
+         }
+ 
+         #work:hover, #info:hover, #writing:hover {
+             transform: rotate(0deg);
+         }
+ 
+         #empty {
+             display: none;
+         }
+ 
+         .year {
+             font-size: 1rem;
+         }
+   }
 
-        #empty, #work {
-            display: none;
-        }
-
+      /*tablet*/
+      @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+ 
         .grid {
-            margin-top: 1rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
+            margin-top: 3rem;
+            grid-template-columns: minmax(75%, 95%);
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            justify-content: center;
         }
-  }
+       }
