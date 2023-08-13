@@ -15,6 +15,19 @@ sup {
     font-size: 12px;
 }
 
+.writing {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.link {
+    font-family: "Xanh Mono", monospace;
+    font-style: italic;
+}
+
+.link:hover {
+    color: #bbce00;
+}
 
 /* buttons */
 
@@ -122,15 +135,17 @@ hr {
     #mobile {
         display: none;
     }
+
+    .grid {
+        row-gap: 5rem;
+    }
 }
 
 /* smartphone */
 @media only screen and (max-width: 480px), (orientation: portrait) {
     .grid {
-      grid-template-columns: minmax(75%, 95%);
+      grid-template-columns: minmax(75%, 98%);
       margin-top: 2rem;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
     }
 
     hr {
