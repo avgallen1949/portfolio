@@ -75,7 +75,7 @@ a:hover {
 
 .right {
     height: 35rem;
-    overflow: auto;
+    overflow: scroll;
     scrollbar-color: #bbce00 #e8e8b1;
     scrollbar-width: thin;
     scroll-behavior: smooth;
@@ -86,7 +86,6 @@ a:hover {
 .grid {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 35rem;
     gap: 20px 60px;
     margin: 2rem;
     margin-top: 3rem;
@@ -113,15 +112,29 @@ hr {
     font-size: 10px;
 }
 
+#mobile {
+    font-size: 1.15rem;
+    font-style: italic;
+}
+
+/* computer */
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    #mobile {
+        display: none;
+    }
+}
+
 /* smartphone */
 @media only screen and (max-width: 480px), (orientation: portrait) {
     .grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      row-gap: 2rem;
+      grid-template-columns: minmax(75%, 95%);
       margin-top: 2rem;
       margin-left: 1.5rem;
       margin-right: 1.5rem;
+    }
+
+    hr {
+        display: none;
     }
 
     h6 {
@@ -129,16 +142,20 @@ hr {
     }
 
     h4 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
     }
 
     .right {
         font-size: 1.3rem;
         height: 30rem;
-        overflow: auto;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
         margin-left: 1rem;
         margin-right: 3rem;
+        overflow: scroll;
     }
 
     .images {
@@ -154,6 +171,7 @@ hr {
         font-size: 2rem;
         margin-left: 1rem;
         margin-right: 3rem;
+        margin-bottom: 0;
     }
 
    .nav {

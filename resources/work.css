@@ -199,7 +199,7 @@ hr {
     }
 
     .grid {
-        grid-template-columns: 2fr;
+        grid-template-columns: minmax(75%, 95%);
         margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
