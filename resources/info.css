@@ -6,7 +6,7 @@ html {
 }
 
 hr {
-    border: 1px black dashed;
+    border: 0.5px black dashed;
 }
 
 /*type */
@@ -76,7 +76,7 @@ a:hover {
 
 .grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     margin: 2rem;
     gap: 20px 60px;
     margin-top: 3rem;
@@ -85,13 +85,17 @@ a:hover {
 }
 
 .right {
-    overflow: scroll;
+    overflow: hidden;
     height: 700px;
     scrollbar-color: #bbce00 #e8e8b1;
     scrollbar-width: thin;
     scroll-behavior: smooth;
-    border-left: 1px black dashed;
-    padding-left: 2rem;
+    border-left: 0px black dashed;
+    padding-left: 1rem;
+}
+
+.right img {
+    height:45rem;
 }
 
 /*text*/
