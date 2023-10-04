@@ -105,6 +105,7 @@ hr {
     height: auto;
     align-content: baseline;
     border-radius: 0.5rem;
+    border: 1px solid black;
 }
 
 .left {
