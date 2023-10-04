@@ -1,0 +1,190 @@
+/* doc */
+html {
+    font-family: "Xanh Mono", monospace;
+    font-size: 16px;
+    background-color: #fffff3;
+}
+
+hr {
+    border: 0.5px black dashed;
+}
+
+/*type */
+h1 {
+    font-family: "Xanh Mono", monospace;
+}
+
+
+/* buttons */
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 1.25rem;
+    font-family: "Xanh Mono", monospace;
+}
+
+#empty {
+    border: 1px black dashed;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 0.75rem;
+    grid-column: span 2;
+    font-size: .9rem;
+    text-align: center;
+    font-style: italic;
+    padding-top: 0.8rem;
+}
+
+#info {
+    background-color:#bbce00;
+}
+
+#work, #client, #info {
+    border: 1px black dashed;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 0.75rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#work, #client {
+    transition: .5s ease-in-out;
+}
+
+#work:hover, #client:hover {
+    background-color: #bbce00;
+    border: 1px #bbce00 dashed;
+}
+
+#work:active, #client:active, #info:active {
+    background-color: #bbce00;
+}
+
+
+/*grid*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin: 2rem;
+    gap: 20px 60px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    grid-auto-flow: row;
+}
+
+.right {
+    overflow: hidden;
+    height: 700px;
+    scrollbar-color: #bbce00 #e8e8b1;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    border-left: 0px black dashed;
+    padding-left: 1rem;
+}
+
+.right img {
+    height:40rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+/*text*/
+.info {
+    font-family: "Xanh Mono", monospace;
+    font-size: 2rem;
+}
+
+#email {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.about {
+    font-size: 20px;
+    line-height: 28px;
+    padding-right: 2rem;
+}
+
+.arena {
+    border: 1px black dashed;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 10px;
+    transition: .5s ease-in-out;
+}
+
+.arena:hover {
+    background-color: #bbce00;
+    border: 1px #bbce00 dashed;
+}
+
+.roles {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.small-text {
+    font-size: 15px;
+}
+
+.role-title {
+    font-family: "Xanh Mono", monospace;
+    font-size: 1.5rem;
+}
+
+/* smartphone */
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    .grid {
+      grid-template-columns: 1fr;
+      margin-top: 2rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    #empty {
+        display: none;
+    }
+
+}
+
+  /*tablet*/
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    #empty {
+        display: none;
+    }
+
+  }
