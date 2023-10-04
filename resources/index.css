@@ -41,7 +41,7 @@ html {
     background-color:#bbce00;
 }
 
-#work, #writing, #info {
+#work, #client, #info {
     border: 1px black dashed;
     padding: 10px 20px;
     border-radius: 25px;
@@ -59,16 +59,16 @@ a:hover {
     cursor: pointer;
 }
 
-#writing, #info {
+#client, #info {
     transition: .5s ease-in-out;
 }
 
-#writing:hover, #info:hover {
+#client:hover, #info:hover {
     background-color: #bbce00;
     border: 1px #bbce00 dashed;
 }
 
-#work:active, #writing:active, #info:active {
+#work:active, #client:active, #info:active {
     background-color: #bbce00;
 }
 
@@ -81,7 +81,7 @@ a:hover {
 
 .grid {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-template-rows: repeat(auto, 1fr);
     column-gap: 2rem;
     row-gap: 3rem;
@@ -115,6 +115,7 @@ hr {
     height: auto;
     align-content: baseline;
     border-radius: 0.5rem;
+    border: 1px solid black;
 }
 
 .left {

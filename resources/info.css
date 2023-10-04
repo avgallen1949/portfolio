@@ -1,6 +1,6 @@
 /* doc */
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Xanh Mono", monospace;
     font-size: 16px;
     background-color: #fffff3;
 }
@@ -40,7 +40,7 @@ h1 {
     background-color:#bbce00;
 }
 
-#work, #writing, #info {
+#work, #client, #info {
     border: 1px black dashed;
     padding: 10px 20px;
     border-radius: 25px;
@@ -58,16 +58,16 @@ a:hover {
     cursor: pointer;
 }
 
-#work, #writing {
+#work, #client {
     transition: .5s ease-in-out;
 }
 
-#work:hover, #writing:hover {
+#work:hover, #client:hover {
     background-color: #bbce00;
     border: 1px #bbce00 dashed;
 }
 
-#work:active, #writing:active, #info:active {
+#work:active, #client:active, #info:active {
     background-color: #bbce00;
 }
 

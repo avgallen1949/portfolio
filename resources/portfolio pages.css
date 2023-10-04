@@ -1,6 +1,6 @@
 /* doc */
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Xanh Mono", monospace;
     font-size: 16px;
     background-color: #fffff3;
 }
@@ -33,8 +33,6 @@ h1 {
  
 #work {
     font-size: 1.25rem;
-    font-weight:bold;
-    letter-spacing: -0.4rem;
     text-decoration: none;
 }
 
@@ -47,9 +45,8 @@ h1 {
 }
 
 a {
-    font-family: "Xanh Mono", monospace;
     font-style: italic;
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
 }
 
@@ -81,7 +78,19 @@ a:hover {
 
 .grid {
     display:grid;
-    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    grid-template-rows: repeat(auto, 1fr);
+    column-gap: 2rem;
+    row-gap: 3rem;
+    margin: 0 2rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    align-items: start;
+}
+
+.grid2 {
+    display:grid;
+    grid-template-columns: repeat(2, minmax(30rem, 1fr));
     grid-template-rows: repeat(auto, 1fr);
     column-gap: 2rem;
     row-gap: 3rem;
@@ -98,8 +107,16 @@ img {
 }
 
 .grid p {
-        font-size: 1.3rem;
-        line-height: 1.9rem;
+        font-size: 1.1rem;
+}
+
+.grid2 p {
+    font-size: 1.1rem;
+}
+
+.grid2 #smaller {
+    font-size: 1rem;
+    line-height: 0rem;
 }
 
 .title {
@@ -135,6 +152,12 @@ h4 {
          margin-right: 1.5rem;
          margin-top: 0px;
      }
+     .grid2 {
+        grid-template-columns: minmax(75%, 95%);
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 0px;
+    }
 
      .nav {
         display: none;
@@ -159,6 +182,12 @@ h4 {
              margin-left: 1.5rem;
              margin-right: 1.5rem;
          }
+
+         .grid2 {
+            margin-top: 3rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
  
          .nav {
              display: grid;
