@@ -108,10 +108,12 @@ img {
 
 .grid p {
         font-size: 1.1rem;
+        line-height: 1.7rem;
 }
 
 .grid2 p {
     font-size: 1.1rem;
+    line-height: 1.7rem;
 }
 
 .grid2 #smaller {
