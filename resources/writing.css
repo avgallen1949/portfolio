@@ -112,7 +112,13 @@ a:hover {
     height: 35rem;
 }
 
-.right, .writing {
+.right p, .writing p{
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.box {
     overflow: scroll;
     scrollbar-color: #bbce00 #e8e8b1;
     scrollbar-width: thin;
@@ -120,9 +126,6 @@ a:hover {
     direction: rtl;
     border-left: 1px black dashed;
     padding-left: 2rem;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: left;
 }
 
 .right>div {
