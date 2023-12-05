@@ -1,0 +1,234 @@
+/* doc */
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    background-color: white;
+    color: darkblue;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+    font-family: "Bold";
+    src: url(./Compagnon-Bold.woff);
+}
+
+@font-face {
+    font-family: "Roman";
+    src: url(./Compagnon-Roman.woff);
+}
+
+@font-face {
+    font-family: "Light";
+    src: url(./Compagnon-Light.woff);
+}
+
+@font-face {
+    font-family: "Medium";
+    src: url(./Compagnon-Medium.woff);
+}
+
+@font-face {
+    font-family: "Italic";
+    src: url(./Compagnon-Italic.woff);
+}
+/* buttons */
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.25rem;
+    font-family: "Roman", 'Courier New', Courier, monospace;
+    margin: 2rem;
+}
+
+#name, #work, #client, #info {
+    color: darkblue;
+}
+
+#work, #client, #info {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+#client:hover, #info:hover, #work:hover {
+    text-decoration: underline;
+    transition: .5s ease-in-out;
+}
+
+
+/*grid*/
+
+.grid {
+    display:grid;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    grid-template-rows: repeat(auto, 1fr);
+    column-gap: 2rem;
+    row-gap: 3rem;
+    margin: 0 10rem;
+    padding-bottom: 3rem;
+    align-items: start;
+}
+
+.grid2 {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    column-gap: 4rem;
+    row-gap: 3rem;
+    margin: 0 10rem;
+    align-items: start;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.grid1 {
+    display:grid;
+    grid-template-columns: 1fr;
+    margin: 0 10rem;
+    align-items: start;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.grid p {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+}
+
+.grid2 p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+.grid2 #smaller {
+    font-size: 1rem;
+    line-height: 0rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-family: "Roman", 'Courier New', Courier, monospace;
+}
+
+
+hr {
+    border: 1px black dashed;
+}
+
+#arrow {
+    font-size: 20px;
+}
+
+.video video {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* smartphone */
+@media only screen and (max-width: 600px), (orientation: portrait) {
+    .grid, .grid2 {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        row-gap: 3rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2rem;
+        width: 90vw;
+    }
+
+    #name, #work, #client, #info {
+       text-align: left;
+    }
+
+    #name {
+       font-size: 1.5rem;
+       text-transform: uppercase;
+       padding-bottom: 1rem;
+    }
+
+    .grid p {
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+}
+
+.grid2 p {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+}
+
+.grid2 #smaller {
+    font-size: 1.5rem;
+    line-height: 0rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-family: "Roman", 'Courier New', Courier, monospace;
+}
+
+}
+
+  /*tablet*/
+  @media only screen and (min-width: 600px) and (max-width: 1200px) and (orientation: landscape) {
+    .grid {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 3rem;
+        width: 70%;
+        margin: auto;
+    }
+
+    .grid2 {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .girlhood {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+}

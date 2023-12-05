@@ -58,7 +58,7 @@ html {
     text-align: center;
 }
 
-#work {
+#client {
     text-decoration: underline;
 }
 
@@ -67,7 +67,7 @@ a {
     color: darkblue;
 }
 
-#client:hover, #info:hover {
+#work:hover, #info:hover {
     text-decoration: underline;
     transition: .5s ease-in-out;
 }
@@ -143,6 +143,13 @@ z-index: 1;
     .list {
         width: 90%;
         margin: auto;
+        font-size: 2.9rem;
+        line-height: 2.8rem;
+    }
+
+    .info {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
     }
 
    }

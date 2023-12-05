@@ -1,17 +1,43 @@
 /* doc */
 html {
-    font-family: "Xanh Mono", monospace;
+    font-family: monospace;
     font-size: 16px;
-    background-color: #fffff3;
+    background-color: white;
+    color: darkblue;
 }
 
-hr {
-    border: 0.5px black dashed;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+    font-family: "Bold";
+    src: url(./Compagnon-Bold.woff);
 }
 
-/*type */
-h1 {
-    font-family: "Xanh Mono", monospace;
+@font-face {
+    font-family: "Roman";
+    src: url(./Compagnon-Roman.woff);
+}
+
+@font-face {
+    font-family: "Light";
+    src: url(./Compagnon-Light.woff);
+}
+
+@font-face {
+    font-family: "Medium";
+    src: url(./Compagnon-Medium.woff);
+}
+
+@font-face {
+    font-family: "Italic";
+    src: url(./Compagnon-Italic.woff);
 }
 
 
@@ -19,153 +45,90 @@ h1 {
 
 .nav {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     font-size: 1.25rem;
-    font-family: "Xanh Mono", monospace;
+    font-family: "Roman", monospace;
+    margin: 2rem;
 }
 
-#empty {
-    border: 1px black dashed;
-    padding: 10px 20px;
-    border-radius: 25px;
-    margin: 0.75rem;
-    grid-column: span 2;
-    font-size: .9rem;
-    text-align: center;
-    font-style: italic;
-    padding-top: 0.8rem;
-}
-
-#info {
-    background-color:#bbce00;
+#name, #work, #client, #info {
+    color: darkblue;
 }
 
 #work, #client, #info {
-    border: 1px black dashed;
-    padding: 10px 20px;
-    border-radius: 25px;
-    margin: 0.75rem;
     text-align: center;
+}
+
+#info {
+    text-decoration: underline;
 }
 
 a {
     text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: black;
-    cursor: pointer;
-}
-
-#work, #client {
-    transition: .5s ease-in-out;
+    color: darkblue;
 }
 
 #work:hover, #client:hover {
-    background-color: #bbce00;
-    border: 1px #bbce00 dashed;
+    text-decoration: underline;
+    transition: .5s ease-in-out;
 }
 
-#work:active, #client:active, #info:active {
-    background-color: #bbce00;
-}
+/*text*/
 
-
-/*grid*/
-
-.grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    margin: 2rem;
-    gap: 20px 60px;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    grid-auto-flow: row;
-}
-
-.right {
-    overflow: hidden;
-    height: 700px;
-    scrollbar-color: #bbce00 #e8e8b1;
-    scrollbar-width: thin;
-    scroll-behavior: smooth;
-    border-left: 0px black dashed;
-    padding-left: 1rem;
-}
-
-.right img {
-    height:40rem;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-    border: 1px solid black;
+.left {
+    width: 50%;
+    margin: auto;
+    font-size: 1.3rem;
+    font-family: "Roman", 'Courier New', Courier, monospace;
+    padding-top:.7rem;
+    padding-bottom: 2rem;
 }
 
 /*text*/
 .info {
-    font-family: "Xanh Mono", monospace;
+    font-family: "Bold", monospace;
     font-size: 2rem;
 }
 
 #email {
-    font-size: 20px;
-    font-style: italic;
+    font-family: "Medium", monospace;
 }
 
-.about {
-    font-size: 20px;
-    line-height: 28px;
-    padding-right: 2rem;
+.link {
+    text-decoration: underline;
 }
 
-.arena {
-    border: 1px black dashed;
-    padding: 10px 20px;
-    border-radius: 25px;
-    margin: 10px;
-    transition: .5s ease-in-out;
-}
-
-.arena:hover {
-    background-color: #bbce00;
-    border: 1px #bbce00 dashed;
-}
-
-.roles {
-    font-size: 20px;
-    line-height: 28px;
-}
-
-.small-text {
-    font-size: 15px;
-}
-
-.role-title {
-    font-family: "Xanh Mono", monospace;
-    font-size: 1.5rem;
-}
 
 /* smartphone */
 @media only screen and (max-width: 480px), (orientation: portrait) {
-    .grid {
-      grid-template-columns: 1fr;
-      margin-top: 2rem;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
-    }
 
     .nav {
         display: grid;
         grid-template-columns: 1fr;
         font-size: 2rem;
-        text-align: center;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        width: 90vw;
     }
 
+    #name, #work, #client, #info {
+       text-align: left;
+    }
+
+    #name {
+       font-size: 1.5rem;
+       text-transform: uppercase;
+       padding-bottom: 1rem;
+    }
     #empty {
         display: none;
+    }
+
+    .left {
+        width: 80%;
+        margin: auto;
+        font-size: 1.7rem;
+        font-family: "Roman", 'Courier New', Courier, monospace;
+        padding-top:.7rem;
+        padding-bottom: 2rem;
     }
 
 }
@@ -175,8 +138,8 @@ a:hover {
 
     .nav {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        font-size: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 1rem;
         text-align: center;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -185,6 +148,15 @@ a:hover {
 
     #empty {
         display: none;
+    }
+
+    .left {
+        width: 70%;
+        margin: auto;
+        font-size: 1.7rem;
+        font-family: "Roman", 'Courier New', Courier, monospace;
+        padding-top:.7rem;
+        padding-bottom: 2rem;
     }
 
   }
