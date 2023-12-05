@@ -141,7 +141,8 @@ z-index: 1;
     }
 
     .list {
-        width: 90vw;
+        width: 90%;
+        margin: auto;
     }
 
    }
@@ -174,7 +175,8 @@ z-index: 1;
         }
 
         .list {
-            width: 90vw;
+            width: 90%;
+            margin: auto;
         }
  
    }
@@ -199,7 +201,8 @@ z-index: 1;
         }
 
         .list {
-            width: 90vw;
+            width: 90%;
+            margin: auto;
         }
 
   }

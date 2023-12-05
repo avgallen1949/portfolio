@@ -141,7 +141,15 @@ z-index: 1;
     }
 
     .list {
-        width: 90vw;
+        width: 90%;
+        margin: auto;
+        font-size: 2.9rem;
+        line-height: 2.8rem;
+    }
+
+    .info {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
     }
 
    }
@@ -174,7 +182,8 @@ z-index: 1;
         }
 
         .list {
-            width: 90vw;
+            width: 90%;
+            margin: auto;
         }
  
    }
@@ -199,7 +208,8 @@ z-index: 1;
         }
 
         .list {
-            width: 90vw;
+            width: 90%;
+            margin: auto;
         }
 
   }

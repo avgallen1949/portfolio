@@ -101,24 +101,34 @@ a {
 
 /* smartphone */
 @media only screen and (max-width: 480px), (orientation: portrait) {
-    .grid {
-      grid-template-columns: 1fr;
-      margin-top: 2rem;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
-    }
 
     .nav {
         display: grid;
         grid-template-columns: 1fr;
         font-size: 2rem;
-        text-align: center;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        width: 90vw;
     }
 
+    #name, #work, #client, #info {
+       text-align: left;
+    }
+
+    #name {
+       font-size: 1.5rem;
+       text-transform: uppercase;
+       padding-bottom: 1rem;
+    }
     #empty {
         display: none;
+    }
+
+    .left {
+        width: 80%;
+        margin: auto;
+        font-size: 1.7rem;
+        font-family: "Roman", 'Courier New', Courier, monospace;
+        padding-top:.7rem;
+        padding-bottom: 2rem;
     }
 
 }
@@ -128,8 +138,8 @@ a {
 
     .nav {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        font-size: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 1rem;
         text-align: center;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -138,6 +148,15 @@ a {
 
     #empty {
         display: none;
+    }
+
+    .left {
+        width: 70%;
+        margin: auto;
+        font-size: 1.7rem;
+        font-family: "Roman", 'Courier New', Courier, monospace;
+        padding-top:.7rem;
+        padding-bottom: 2rem;
     }
 
   }
