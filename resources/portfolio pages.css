@@ -159,30 +159,18 @@ hr {
     }
 
     .nav {
-        display: grid;
-        grid-template-columns: 1fr;
-        font-size: 2rem;
-        width: 90vw;
+        display: none;
     }
 
-    #name, #work, #client, #info {
-       text-align: left;
-    }
-
-    #name {
-       font-size: 1.5rem;
-       text-transform: uppercase;
-       padding-bottom: 1rem;
-    }
 
     .grid p {
         font-size: 2.5rem;
-        line-height: 2.6rem;
+        line-height: 3rem;
 }
 
 .grid2 p {
     font-size: 2.5rem;
-    line-height: 2.6rem;
+    line-height: 3rem;
 }
 
 .grid2 #smaller {
