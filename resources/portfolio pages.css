@@ -115,21 +115,20 @@ img {
 
 .grid p {
         font-size: 1.1rem;
-        line-height: 1.7rem;
+        line-height: 1.5rem;
 }
 
 .grid2 p {
     font-size: 1.1rem;
-    line-height: 1.7rem;
+    line-height: 1.5rem;
 }
 
 .grid2 #smaller {
     font-size: 1rem;
-    line-height: 0rem;
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Roman", 'Courier New', Courier, monospace;
 }
 
@@ -149,7 +148,7 @@ hr {
 }
 
 /* smartphone */
-@media only screen and (max-width: 600px), (orientation: portrait) {
+@media only screen and (max-width: 900px), (orientation: portrait) {
     .grid, .grid2 {
         display:grid;
         grid-template-columns: 1fr;
@@ -177,29 +176,28 @@ hr {
     }
 
     .grid p {
-        font-size: 1.7rem;
-        line-height: 2.3rem;
+        font-size: 2.5rem;
+        line-height: 2.6rem;
 }
 
 .grid2 p {
-    font-size: 1.7rem;
-    line-height: 2.3rem;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
 }
 
 .grid2 #smaller {
     font-size: 1.5rem;
-    line-height: 0rem;
 }
 
 .title {
-    font-size: 2.5rem;
-    font-family: "Roman", 'Courier New', Courier, monospace;
+    font-size: 3.5rem;
+    font-family: "Light", 'Courier New', Courier, monospace;
 }
 
 }
 
   /*tablet*/
-  @media only screen and (min-width: 600px) and (max-width: 1200px) and (orientation: landscape) {
+  @media only screen and (min-width: 900px) and (max-width: 1200px) and (orientation: landscape) {
     .grid {
         display:grid;
         grid-template-columns: repeat(3, 1fr);
@@ -210,7 +208,7 @@ hr {
 
     .grid2 {
         display:grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         row-gap: 3rem;
         width: 80%;
         margin: auto;

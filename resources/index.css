@@ -83,12 +83,13 @@ a {
 .list {
     width: 90%;
     margin: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .info {
     font-size: 1rem;
     line-height: 1rem;
+    text-transform: lowercase;
 }
 
 a img {
@@ -99,10 +100,10 @@ a img {
 a:hover img {
 position: absolute;
 width: auto;
-height: 40rem;
+height: 35rem;
 margin: auto;
-top:9rem;
-right: 10rem;
+top:7rem;
+right: 15rem;
 display: block;
 z-index: 1;
 }
