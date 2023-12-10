@@ -76,9 +76,9 @@ a {
 /*text*/
 
 .left {
-    width: 50%;
+    width: 60%;
     margin: auto;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: "Roman", 'Courier New', Courier, monospace;
     padding-top:.7rem;
     padding-bottom: 2rem;
