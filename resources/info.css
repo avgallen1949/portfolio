@@ -61,6 +61,14 @@ html {
 
 #info {
     text-decoration: underline;
+    text-decoration-color: #959024;
+
+}
+
+#name img {
+    object-fit: cover;
+    width: 45%;
+    height: auto;
 }
 
 a {
@@ -69,8 +77,9 @@ a {
 }
 
 #work:hover, #client:hover {
-    text-decoration: underline;
     transition: .5s ease-in-out;
+    color: #959024;
+    text-decoration: underline;
 }
 
 /*text*/
@@ -96,6 +105,11 @@ a {
 
 .link {
     text-decoration: underline;
+}
+
+.smaller {
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 
