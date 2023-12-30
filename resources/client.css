@@ -58,8 +58,16 @@ html {
     text-align: center;
 }
 
+#name img {
+    object-fit: cover;
+    width: 45%;
+    height: auto;
+}
+
 #client {
     text-decoration: underline;
+    text-decoration-color: #959024;
+
 }
 
 a {
@@ -68,8 +76,9 @@ a {
 }
 
 #work:hover, #info:hover {
-    text-decoration: underline;
     transition: .5s ease-in-out;
+    color: #959024;
+    text-decoration: underline;
 }
 
 /* Content */
@@ -78,6 +87,11 @@ a {
     font-family: "Roman";
     margin-top: 3rem;
     z-index: 2;
+}
+
+.list p:hover {
+    transition: .5s ease-in-out;
+    color: #959024;
 }
 
 .list {
