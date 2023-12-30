@@ -67,8 +67,9 @@ a {
 }
 
 #client:hover, #info:hover, #work:hover {
-    text-decoration: underline;
     transition: .5s ease-in-out;
+    color: #959024;
+    text-decoration: underline;
 }
 
 
@@ -146,6 +147,13 @@ hr {
     width: 100%;
     height: auto;
 }
+
+#name img {
+    object-fit: cover;
+    width: 45%;
+    height: auto;
+}
+
 
 /* smartphone */
 @media only screen and (max-width: 900px), (orientation: portrait) {
