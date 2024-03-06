@@ -1,8 +1,9 @@
 /* doc */
 html {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    background-color: white;
+    font-size: 20px;
+    background-color: rgb(244, 251, 193);
+    color: black;
 }
 
 * {
@@ -14,210 +15,113 @@ html {
     text-rendering: optimizeLegibility;
   }
 
-@font-face {
-    font-family: "Bold";
-    src: url(./Compagnon-Bold.woff);
-}
-
-@font-face {
-    font-family: "Roman";
-    src: url(./Compagnon-Roman.woff);
-}
-
-@font-face {
-    font-family: "Light";
-    src: url(./Compagnon-Light.woff);
-}
-
-@font-face {
-    font-family: "Medium";
-    src: url(./Compagnon-Medium.woff);
-}
-
-@font-face {
-    font-family: "Italic";
-    src: url(./Compagnon-Italic.woff);
+  @font-face {
+    font-family: "cirrus";
+    src: url(./CirrusCumulus.woff);
 }
 
 
-/* buttons */
-
-.nav {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    font-size: 1.25rem;
-    font-family: "Roman", monospace;
-    margin: 2rem;
+.info {
+padding-left: 1rem;
+display: block;
+position: fixed;
+width: 20rem;
+padding-top:.5rem;
 }
 
-#name, #work, #client, #info {
-    color: darkblue;
+#cc{
+  width: 4rem;
 }
 
-#work, #client, #info {
-    text-align: center;
+footer {
+  width: 100vw;
+  overflow: hidden;
+  top: 0;
+  height: .7rem;
+  background-color: rgb(232, 255, 85);
+  display: block;
+  position: absolute;
+  z-index: 0;
 }
 
-#work {
-    text-decoration: underline;
-    text-decoration-color: #959024;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  position: relative;
+  margin-left: 23rem;
 }
 
-#name img {
-    object-fit: cover;
-    width: 45%;
-    height: auto;
+.name {
+  font-size: 1.5rem;
+  font-family: "cirrus", Arial, Helvetica, sans-serif;
+}
+
+#about {
+  font-size: .8rem;
+}
+
+.button {
+font-size: .7rem;
 }
 
 a {
-    text-decoration: none;
-    color: darkblue;
+  color: black;
+  text-decoration: none;
 }
 
-#client:hover, #info:hover {
-    transition: .5s ease-in-out;
-    color: #959024;
-    text-decoration: underline;
+.buttons {
+  border: .5px solid black;
+  border-radius: 15rem;
+  padding: .5rem;
 }
 
-/* Content */
-.list p {
-    color: darkblue;
-    font-family: "Roman";
-    margin-top: 3rem;
-    z-index: 2;
+.buttons:hover{
+  background-color: rgb(232, 255, 85);
+  transition: .4s ease-in-out;
 }
 
-.list {
-    width: 90%;
-    margin: 2rem;
-    font-size: 1.5rem;
+.studio, .client {
+  line-height: 2.5rem;
+
 }
 
-.info {
-    font-size: 1rem;
-    line-height: 1rem;
-    text-transform: lowercase;
+.studio {
+  padding-left: 1rem;
 }
-
-a img {
-    display: none;
-    z-index: 1;
-}
-
-a:hover img {
-position: absolute;
-width: auto;
-height: 35rem;
-margin: auto;
-top:7rem;
-right: 15rem;
-display: block;
-z-index: 1;
-}
-
-.list p:hover {
-    transition: .5s ease-in-out;
-    color: #959024;
-    cursor: pointer;
-}
-
 
 /* smartphone */
-@media only screen and (max-width: 480px), (orientation: portrait) {
-
-    .nav {
-         display: grid;
-         grid-template-columns: 1fr;
-         font-size: 2rem;
-         width: 90vw;
-     }
-
-     #name, #work, #client, #info {
-        text-align: left;
-     }
-
-     #name {
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        padding-bottom: 1rem;
-     }
- 
-     a img {
-         display: none;
-     }
-
-     a:hover img {
-        display: none;
-        }
-
-    .info {
-        line-height: -2rem;
-    }
-
-    .list {
-        width: 90%;
-        margin: auto;
-    }
-
-   }
- 
-   /*tablet*/
-   @media only screen and (min-width: 900px) and (max-width: 1200px) and (orientation: landscape) {
- 
-         .nav {
-             display: grid;
-             grid-template-columns: repeat(4, 1fr);
-             font-size: 1rem;
-             text-align: center;
-             margin-left: 0.5rem;
-             margin-right: 0.5rem;
-             margin-top: 2rem;
-         }
-
-         a img {
-            display: none;
-        }
-        
-        a:hover img {
-        position: absolute;
-        width: auto;
-        height: 30rem;
-        margin: auto;
-        bottom:5rem;
-        right: 5rem;
-        display: block;
-        }
-
-        .list {
-            width: 90%;
-            margin: auto;
-        }
- 
-   }
-
-      /*in between*/
-      @media only screen and (min-width: 768px) and (max-width: 900px) and (orientation: landscape) {
- 
-        .nav {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            font-size: 1rem;
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
-            margin-top: 2rem;
-        }
-
-        a img {
-           display: none;
-       }
-       a:hover img {
-        display: none;
-        }
-
-        .list {
-            width: 90%;
-            margin: auto;
-        }
-
+@media only screen and (max-width: 500px), (orientation: portrait) {
+  .grid {
+      display:block;
+      width: 90vw;
+      margin: auto;
+      margin-bottom: 2rem;
   }
+
+  .info{
+    display: block;
+    position: relative;
+    width: 90vw;
+    margin: auto;
+}
+
+
+}
+
+/*tablet*/
+@media only screen and (min-width: 500px) and (max-width: 1100px) and (orientation: landscape) {
+.info{
+    display: block;
+    position: relative;
+    width: 90vw;
+    margin: auto;
+}
+
+.grid{
+  margin-left: 0rem;
+  width: 90vw;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+}
