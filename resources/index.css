@@ -106,6 +106,10 @@ a {
     margin: auto;
 }
 
+.client {
+  padding-left: 1rem;
+}
+
 
 }
 
@@ -123,5 +127,9 @@ a {
   width: 90vw;
   margin: auto;
   margin-bottom: 2rem;
+}
+
+.client {
+  padding-left: 1rem;
 }
 }
