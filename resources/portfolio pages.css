@@ -103,6 +103,15 @@ html {
     height: auto;
 }
 
+.smaller img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  display: block;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
 
 /* smartphone */
 @media only screen and (max-width: 900px), (orientation: portrait) {
