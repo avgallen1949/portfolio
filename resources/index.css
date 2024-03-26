@@ -33,15 +33,16 @@ padding-top:.5rem;
   width: 4rem;
 }
 
-footer {
-  width: 100vw;
+header {
+  width: 110vw;
   overflow: hidden;
   top: 0;
   height: .7rem;
   background-color: rgb(232, 255, 85);
   display: block;
-  position: absolute;
+  position: fixed;
   z-index: 0;
+  margin-left: -1rem;
 }
 
 .grid {
@@ -88,6 +89,18 @@ a {
 
 .studio {
   padding-left: 1rem;
+}
+
+.footer{
+  width: 110vw;
+  overflow: hidden;
+  bottom: 0;
+  height: .7rem;
+  background-color: rgb(232, 255, 85);
+  display: block;
+  position: fixed;
+  z-index: 0;
+  margin-left: -1rem;
 }
 
 /* smartphone */
