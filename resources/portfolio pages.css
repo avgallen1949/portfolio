@@ -122,7 +122,10 @@ html {
         width: 90vw;
         margin: auto;
     }
-
+    html {
+      margin-left: 0rem;
+      margin-right: 0rem;
+  }
 
 }
 
@@ -133,4 +136,8 @@ html {
         width: 90vw;
         margin: auto;
     }
+    html {
+      margin-left: 0rem;
+      margin-right: 0rem;
+  }
 }
