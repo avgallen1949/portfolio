@@ -105,6 +105,10 @@ html {
     height: auto;
 }
 
+.small-text{
+  font-size: 10px;
+}
+
 .smaller img {
   width: 70%;
   height: auto;
