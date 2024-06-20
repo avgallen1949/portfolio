@@ -29,6 +29,10 @@ width: 20rem;
 padding-top:.5rem;
 }
 
+#binch:hover{
+  text-decoration: underline;
+}
+
 #cc{
   width: 4rem;
 }
