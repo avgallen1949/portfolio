@@ -1,0 +1,94 @@
+*{
+    font-size: 14px;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+}
+
+html {
+    background-color: #EFEFEF;
+}
+
+@font-face {
+    font-family: Akkurat;
+    src: url(./Akkurat-Normal.otf);
+}
+
+@font-face {
+    font-family: Akkurat Mono;
+    src: url(./Akkurat-Mono.otf);
+}
+
+.name {
+    font-family: Akkurat, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;;
+}
+
+p {
+    font-family: Akkurat, Arial, Helvetica, sans-serif;
+}
+
+#index-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95vw;
+    position: relative;
+    margin: auto;
+    align-items: center;
+}
+
+#description-index {
+    text-align: right;
+}
+
+.grid-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 102vw;
+    position: relative;
+    margin: auto;
+    left:-1rem;
+    overflow: hidden;
+}
+
+.grid-buttons div {
+    border: 1px black solid;
+}
+
+.grid-buttons div:hover {
+    background-color: #ECFF7D;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+div .mobile-hidden:hover {
+    background-color: #EFEFEF;
+}
+
+.grid-buttons p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+#index-color {
+    background-color: #ECFF7D;
+    width: 105vw;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+  /* smartphone */
+  @media only screen and (max-width: 500px), (orientation: portrait) {
+    .grid-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+  }
+  .mobile-hidden {
+    display: none;
+  };
+}
